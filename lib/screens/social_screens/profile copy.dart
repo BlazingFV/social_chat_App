@@ -310,7 +310,7 @@ class _ProfileState extends State<Profile> {
                   alignment: Alignment.centerLeft,
                   padding: EdgeInsets.only(top: 12),
                   child: Text(
-                    user.username,
+                    user.username==null?user.displayName:user.username,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 16,
