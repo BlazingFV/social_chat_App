@@ -45,7 +45,7 @@ class _SearchState extends State<Search>
                 _controller.clear();
               }),
         ),
-        onChanged: handleSearch,
+        onFieldSubmitted: handleSearch,
       ),
     );
   }
@@ -132,14 +132,14 @@ class UserResult extends StatelessWidget {
                 backgroundImage: CachedNetworkImageProvider(user.photoUrl),
               ),
               title: Text(
-                user.displayName,
+                user.username == null ? '':user.username,
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               subtitle: Text(
-                user.username,
+                user.displayName == null ? '' : user.displayName,
                 style: TextStyle(
                   color: Colors.white,
                 ),
