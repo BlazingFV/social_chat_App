@@ -68,7 +68,7 @@ class _SearchState extends State<Search>
               ),
             ),
             SvgPicture.asset(
-              'assets/images/search.svg',
+              'images/search.svg',
               height: orientation == Orientation.portrait ? 300 : 200,
             ),
           ],

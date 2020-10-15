@@ -83,7 +83,7 @@ class ActivityFeedItem extends StatelessWidget {
   factory ActivityFeedItem.fromDocument(DocumentSnapshot doc) {
     Map getDocs = doc.data();
     return ActivityFeedItem(
-      username: getDocs['username'],
+      username: getDocs['userName'],
       userId: getDocs['userId'],
       type: getDocs['type'],
       postId: getDocs['postId'],

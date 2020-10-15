@@ -90,7 +90,7 @@ class _UploadState extends State<Upload>
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           SvgPicture.asset(
-            'assets/images/upload.svg',
+            'images/upload.svg',
             height: 260,
           ),
           Padding(

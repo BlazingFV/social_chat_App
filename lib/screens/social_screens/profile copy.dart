@@ -242,7 +242,7 @@ class _ProfileState extends State<Profile> {
 
   buildProfileHeader() {
     return FutureBuilder(
-        future: usersRef.doc(currentUser?.id).get(),
+        future: usersRef.doc(widget.profileId).get(),
         builder: (context, snapShot) {
           if (!snapShot.hasData) {
             return circularProgress();
@@ -260,7 +260,7 @@ class _ProfileState extends State<Profile> {
                       backgroundColor: Colors.grey,
                       backgroundImage: user.photoUrl != null
                           ? CachedNetworkImageProvider(user.photoUrl)
-                          : AssetImage('assets/images/person_icon.png'),
+                          : AssetImage('images/person-icon.png'),
                     ),
                     Expanded(
                       flex: 1,
@@ -339,7 +339,7 @@ class _ProfileState extends State<Profile> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SvgPicture.asset(
-              'assets/images/no_content.svg',
+              'images/no_content.svg',
               height: 260,
             ),
             Padding(

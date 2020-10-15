@@ -81,6 +81,11 @@ flutter:
   assets:
     - images/profile.jpg
     - images/google_logo.png
+    - images/activity_feed.svg
+    - images/no_content.svg
+    - images/search.svg
+    - images/upload.svg
+    - images/person-icon.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see

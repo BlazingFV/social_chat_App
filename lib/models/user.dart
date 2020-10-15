@@ -22,9 +22,9 @@ class User {
     return User(
       id: getDoc['userId'],
       email: getDoc['email'],
-      username: getDoc['userName'],
+      username: getDoc['firstName'],
       photoUrl: getDoc['UserimageUrl'],
-      displayName: getDoc['displayName'],
+      displayName: getDoc['userName'],
       bio: getDoc['bio'],
     );
   }
